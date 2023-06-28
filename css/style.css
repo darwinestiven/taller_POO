@@ -39,17 +39,36 @@ h1{
 #titulo{
     margin-left: 200px;
 }
-#caja{
+#nombre{
     width: 300px; 
     height: 30px;
     margin-top: 0px;
 }
-#img{
+
+#apellido{
     width: 300px; 
-    height: 300px; 
-    margin-left: 400px;
-    margin-top: -330px;
+    height: 30px;
+    margin-top: 0px;
 }
+
+#sexo{
+    width: 300px; 
+    height: 30px;
+    margin-top: 0px;
+}
+
+#fechana{
+    width: 300px; 
+    height: 30px;
+    margin-top: 0px;
+}
+
+#fechaing{
+    width: 300px; 
+    height: 30px;
+    margin-top: 0px;
+}
+
 .contenedor2{
     padding: 20px;
     margin-top: -30PX;
@@ -63,14 +82,20 @@ h1{
     border: 4px solid #0b0b0b;
 }
 
-#MODIFICAR0{
+#salario{
+    width: 300px; 
+    height: 30px;
+    margin-top: 0px;
+}
+
+#seleccionarImagen{
     height: 40px;
     width: 140px;
     margin-top: -40PX;
     margin-left: 470px;
 }
 
-#MODIFICAR{
+#modificar{
     height: 40px;
     width: 140px;
     margin-top: -40PX;
@@ -88,7 +113,21 @@ h1{
     background-color: rgb(178, 220, 242);
     border: 4px solid #0b0b0b;
 }
-#MODIFICAR2{
+#calcularEdad{
+    height: 45px;
+    width: 140px;
+    margin-top: 15PX;
+    margin-left: 150px;
+}
+
+#calcularTiempo{
+    height: 45px;
+    width: 140px;
+    margin-top: 15PX;
+    margin-left: 150px;
+}
+
+#calcularPrestaciones{
     height: 45px;
     width: 140px;
     margin-top: 15PX;
@@ -129,4 +168,8 @@ h1{
     width: 140px;
     margin-top: 0PX;
     margin-left: 150px;
+}
+
+#datoe{
+    background-color: rgb(139, 243, 255);
 }
