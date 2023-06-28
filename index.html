@@ -19,58 +19,65 @@
     />
     <!-- MDB -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/mdb.min.css" />
   </head>
   <body>
- 
-    <div class="contenedor">
-      DATOS PERSONALES <br>
-      <label for="Nombre1"> Nombre </label>
-      <input type="text" id="caja">
 
-      <label for="Nombre2"> Apellido</label>
-      <input type="text" id="caja">
+    <div class="contenedorp">
+        <h1>SISTEMA DE EMPLEADOS</h1>
+        <div class="contenedor">
+            <H6>DATOS PERSONALES</H6>
+            <label for="Nombre1"> Nombre </label>
+            <input type="text" id="caja">
       
-      <label for="Apellido1"> Sexo </label>
-      <input type="text" id="caja">
-
-      <label for="Apellido2"> Fecha de nacimiento </label>
-      <input type="date" id="caja">
-
-      <label for="Apellido2"> Fecha de ingreso </label>
-      <input type="date" id="caja">
-
-      <img src="img/img1.png" id="img">
-   
-  </div>
-
-  <div class="contenedor2">
-    SALARIO<br>
-    <label for="Nombre1"> Nombre </label>
-    <input type="text" id="caja">
-
-    <button id="MODIFICAR"> MODIFICAR</button>
-  </div>
-  
-  <div class="contenedor3">
-    CALCULOS <br>
-    <button id="MODIFICAR2"> CALCULAR EDAD</button>
-    <button id="MODIFICAR2"> CALCULAR ANTIGUEDAD</button>
-    <button id="MODIFICAR2"> CALCULAR PRESTACIONES </button>
-
-    <input type="text" id="caja2">
-    <input type="text" id="caja3">
-    <input type="text" id="caja4">
-
-   
-  </div>
-  <div class="contenedor4">
-    PUNTOS DE EXTENCION <br>
-        <div class="salario">
-          <button id="MODIFICAR3">OPCION 1</button>
-          <button id="MODIFICAR3">OPCION 2</button>
+            <label for="Nombre2"> Apellido</label>
+            <input type="text" id="caja">
+            
+            <label for="Apellido1"> Sexo </label>
+            <input type="text" id="caja">
+      
+            <label for="Apellido2"> Fecha de nacimiento </label>
+            <input type="date" id="caja">
+      
+            <label for="Apellido2"> Fecha de ingreso </label>
+            <input type="date" id="caja">
+      
+            
+            <img class="foto" id="imagenPreview" src="#" >
+            <button type="button" class="btn btn-success" id="MODIFICAR0">AGREGAR FOTO</button>
+         
         </div>
-      </div>
-
+      
+        <div class="contenedor2">
+          <H6>SALARIO</H6>
+          <label for="Nombre1"> Salario </label>
+          <input type="text" id="caja">
+      
+          <button type="button" class="btn btn-success" id="MODIFICAR">MODIFICAR</button>
+        </div>
+        
+        <div class="contenedor3">
+            <H6>CÁLCULOS</H6>
+          <button type="button" class="btn btn-success" id="MODIFICAR2">CALCULAR EDAD</button>
+          <button type="button" class="btn btn-success" id="MODIFICAR2">CALCULAR ANTIGUEDAD</button>
+          <button type="button" class="btn btn-success" id="MODIFICAR2">CALCULAR PRESTACIONES</button>
+      
+          <input type="text" id="caja2">
+          <input type="text" id="caja3">
+          <input type="text" id="caja4">
+      
+         
+        </div>
+        <div class="contenedor4">
+            <H6>PUNTOS DE EXTENSIÓN</H6>
+              <div class="salario">
+                <button type="button" class="btn btn-success" id="MODIFICAR3">OPCIÓN 1</button>
+                <button type="button" class="btn btn-success" id="MODIFICAR3">OPCIÓN 2</button>
+              </div>
+            </div>
+    </div>
+ 
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
