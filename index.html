@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body>
+
+    <div class="contenedorp">
+        <h1>SISTEMA DE EMPLEADOS</h1>
+        <div class="contenedor">
+            <H6>DATOS PERSONALES</H6>
+            <label for="nombre" >Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" >
+      
+            <label for="apellido" >Apellido</label>
+            <input type="text" class="form-control" id="apellido" name="apellido" >
+            
+            <label for="sexo" >Sexo</label>
+            <select id="sexo" name="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+      
+            <label for="nacimiento" >Fecha Nacimiento </label>
+            <input type="date" id="fechana" name="fechana">
+      
+            <label for="ingreso" >Fecha Ingreso </label>
+            <input type="date" id="fechaing" name="fechaing">
+
+            <img class="foto" id="imagenPreview" src="#" >
+            <button class="btn btn-success"  id="seleccionarImagen">Agregar Foto</button>
+        </div>
+        <div class="contenedor2">
+          <H6>SALARIO</H6>
+          <label for="salario">Salario</label>
+          <input min="0" type="number" style="border: none;" id="salario" name="salario">
+      
+          <button id="modificar" class="btn btn-success" data-mdb-toggle="modal" data-mdb-target="#exampleModal">Modificar</button>
+        </div>
+        
+        <div class="contenedor3">
+            <H6>CÁLCULOS</H6>
+            <button onclick="calcular_edad()" id="calcularEdad" class="btn btn-success">Calcular Edad</button>     
+            <button onclick="calcular_tiempo()" id="calcularTiempo" class="btn btn-success">Calcular Antiguedad</button>
+            <button onclick="calcular_prestaciones()" id="calcularPrestaciones" class="btn btn-success">Calcular Prestaciones</button> 
+      
+          <input type="text" id="caja2" readonly>
+          <input type="text" id="caja3" readonly>
+          <input type="text" id="caja4" readonly>
+      
+         
+        </div>
+        <div class="contenedor4">
+            <H6>PUNTOS DE EXTENSIÓN</H6>
+              <div class="salario">
+                <button type="button" class="btn btn-success" id="MODIFICAR3">OPCIÓN 1</button>
+                <button type="button" class="btn btn-success" id="MODIFICAR3">OPCIÓN 2</button>
+              </div>
+        </div>
+    
+            <!-- Ventana modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header" id="datoe">
+                    <h5 class="modal-title" id="exampleModalLabel">Datos Empleados</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body; estilomodal">
+                    
+                  </div>
+                  <div class="modal-footer" id="datoe">
+                    <label for="modificar" id="label">Ingrese nuevo salario del empleado</label> <br>
+                    <input type="number" id="salarioNuevo" name="salarioNuevo"> <br>
+
+                    <button id="boton" type="button" class="btn btn-success" data-mdb-dismiss="modal" onclick="modificar()">Modificar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+ 
+
+    
+    
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/funciones.js"></script>
+  </body>
+</html>
