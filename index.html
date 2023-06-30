@@ -73,8 +73,8 @@
         <div class="contenedor4">
             <H6>PUNTOS DE EXTENSIÓN</H6>
               <div class="salario">
-                <button type="button" class="btn btn-success" id="MODIFICAR3">OPCIÓN 1</button>
-                <button type="button" class="btn btn-success" id="MODIFICAR3">OPCIÓN 2</button>
+                <button type="button" class="btn btn-success" id="MODIFICAR3" class="btn btn-success" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">OPCIÓN 1</button>
+                <button type="button" class="btn btn-success" id="MODIFICAR3" onclick="calcularEdadIngreso()">OPCIÓN 2</button>
               </div>
         </div>
     
@@ -100,6 +100,36 @@
             </div>
     </div>
  
+    <!-- Ventana modal opcion1 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" id="datoe">
+            <h5 class="modal-title" id="exampleModalLabel">Datos Academicos Empleado</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body; estilomodal">
+            
+          </div>
+          <div  id="datoe">
+            <div class="color" id="formulario">
+
+              <label >Nombre de la Universidad</label> <br>
+              <input class="inputda" type="text" id="input1"><br>
+
+          
+              <label >Nombre de la Facultad</label> <br>
+              <input class="inputda" type="text" id="input2"><br>
+
+              <label >Titulo Academico</label> <br>
+              <input class="inputda" type="text" id="input3"> <br>
+            
+              <button id="boton2" type="button" class="btn btn-success" data-mdb-dismiss="modal" onclick="agregarDatos()">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     
     

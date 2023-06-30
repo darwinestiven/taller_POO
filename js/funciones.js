@@ -176,3 +176,79 @@ seleccionarImagen.addEventListener("click", function() {
 
   input.click();
 });
+
+var arreglo = [];
+
+function agregarDatos() {
+  // Obtiene los valores de los inputs
+  var dato1 = document.getElementById("input1").value;
+  var dato2 = document.getElementById("input2").value;
+  var dato3 = document.getElementById("input3").value;
+
+
+  // Agrega el objeto al arreglo
+  arreglo.push(dato1, dato2, dato3);
+
+  document.getElementById("input1").value = "";
+  document.getElementById("input2").value = "";
+  document.getElementById("input3").value = "";
+
+  
+  // Limpia los valores de los inputs
+  if(dato1=="" || dato2=="" || dato3==""){
+    alert("DATOS VACIOS")
+  }
+  else{
+    alert("Los datos son: [" + arreglo.join(", ") + "]");
+  }
+  arreglo = [];
+  
+}
+
+function calcularEdadIngreso() {
+  
+  var fechaIngreso = new Date(document.getElementById("fechaing").value);
+  var fechaNacimiento = new Date(document.getElementById("fechana").value);
+
+  if (!fechaIngreso || isNaN(fechaIngreso) || !fechaNacimiento || isNaN(fechaNacimiento)) {
+    alert("FECHAS VACÍAS O INVÁLIDAS");
+  } else {
+  
+    var edad = {};
+    
+    edad.years = fechaIngreso.getFullYear() - fechaNacimiento.getFullYear();
+    // Cálculo de la diferencia en años
+    
+    var meses = fechaIngreso.getMonth() - fechaNacimiento.getMonth();
+    // Cálculo de la diferencia en meses
+
+    if (meses < 0) {
+        edad.years--;
+        meses += 12;
+    }
+    edad.months = meses;
+
+    // Cálculo de la diferencia en días
+    var dias = fechaIngreso.getDate() - fechaNacimiento.getDate();
+    if (dias < 0) {
+        var ultimoDiaMesAnterior = new Date(fechaIngreso.getFullYear(), fechaIngreso.getMonth(), 0).getDate();
+        dias += ultimoDiaMesAnterior;
+        edad.months--;
+        if (edad.months < 0) {
+            edad.months += 12;
+            edad.years--;
+        }
+    }
+    edad.days = dias;
+
+    var resultado = "La persona tenía " + edad.years + " años, " + edad.months + " meses y " + edad.days + " días al ingresar a la empresa.";
+
+    alert(resultado);
+  }
+} 
+  
+  
+  
+
+  
+
